@@ -20,12 +20,12 @@ if os.path.exists(".env"):
 __version__ = "v0.1"
 
 # -------------CONFIGS--------------------
-API_ID = int(os.getenv("API_ID", ""))
-API_HASH = os.getenv("API_HASH", "")
+API_ID = int(os.getenv("API_ID", "13060105"))
+API_HASH = os.getenv("API_HASH", "abe17ed579dcdd07c108d7dbff99d58d")
 ALIVE_PIC = os.getenv("ALIVE_PIC", "")
 ALIVE_MSG = os.getenv("ALIVE_MSG", "")
 PING_MSG = os.getenv("PING_MSG", "")
-SESSION = os.getenv("SESSION", None)
+SESSION = os.getenv("SESSION", BQDHSAkABxS5ExvRnvv6GgWMYhaJo0yHP9r9kgVISN2DswFBKqwDPPno_Ig652ojKddxW5RvmLVGXrBWXSbcM8edbJ-MgpkNWoGUqEG4eDPFamByUQ6ZrS3_-DlrNXxATm-DnyzpBxyk_jvcF-wn2tTskThNhucn2qfEQBsF3ujd9W90H7lUAPXt-rFN5JBeacZvvN-RG03r9SkMHB4cGS1skMmemLUt4EM7yzIG6FFDIjmD3tAiGZXades-KKdRkSO45_ilz_gAILyBzggnSuuHtPqarMgrZZWQMCIFjkOZPAWFUZoeyB8_fAERkL6E141hUxh5qqTMWuUmZmJPuDUYjsbGKgAAAAFKn4avAA)
 SESSION2 = os.getenv("SESSION2", None)
 SESSION3 = os.getenv("SESSION3", None)
 SESSION4 = os.getenv("SESSION4", None)
@@ -56,7 +56,7 @@ HNDLR = os.getenv("HNDLR", ".")
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 sudo = os.getenv("SUDO_USERS")
 
-SUDO_USERS = []
+SUDO_USERS = [5375447097]
 if sudo:
     SUDO_USERS = make_int(sudo)
 DEVS = []
@@ -66,7 +66,7 @@ for x in DEVS:
 SUDO_USERS.append(OWNER_ID)
 
 
-# SUDO_USERS = list(filter(lambda x: x, map(int, os.getenv("SUDO_USERS", "1517994352 1789859817").split())))
+# SUDO_USERS = list(filter(lambda x: x, map(int, os.getenv("SUDO_USERS", "5375447097").split())))
 #----------------------------------------------
 
 RiZoeL = Client(name="SESSION", api_id = API_ID, api_hash = API_HASH, session_string=SESSION, plugins=dict(root="SpamX.module"))
